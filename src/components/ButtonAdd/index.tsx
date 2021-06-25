@@ -4,11 +4,6 @@ import { styles } from "./style";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { theme } from "../../global/styles/themes";
 
-type Props = RectButtonProps & {
-  title: string;
-  //title?:string;-> significa que title é uma prop não obrigatória
-};
-
 export const ButtonAdd = ({ ...rest }: RectButtonProps) => {
   return (
     <RectButton style={styles.container} {...rest}>
