@@ -18,6 +18,10 @@ export const Home = () => {
     navigation.navigate("AppointmentDetails");
   };
 
+  const handleAppoitmentCreateNavigation = () => {
+    navigation.navigate("AppointmentCreate");
+  };
+
   const appointments = [
     {
       id: "1",
@@ -47,7 +51,7 @@ export const Home = () => {
       <View style={styles.container}>
         <View style={styles.header}>
           <Profile />
-          <ButtonAdd />
+          <ButtonAdd onPress={() => handleAppoitmentCreateNavigation()} />
         </View>
         <CategorySelect
           categorySelected={category}
