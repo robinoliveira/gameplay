@@ -7,9 +7,6 @@ import {
   TouchableOpacityProps,
 } from "react-native";
 import { styles } from "./style";
-import IllustrationImg from "../../assets/illustration.png";
-import { ButtonIcon } from "../../components/ButtonIcon";
-import { Background } from "../../components/Background";
 import { GuildIcon } from "../GuildIcon";
 import { Feather } from "@expo/vector-icons";
 import { theme } from "../../global/styles/themes";

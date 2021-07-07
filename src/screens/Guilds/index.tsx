@@ -36,8 +36,10 @@ export const Guilds = ({ setGuildSelected }: Props) => {
   return (
     <View style={styles.container}>
       <FlatList
+        ListHeaderComponent={() => <ListDivider isCenter />}
+        contentContainerStyle={{ paddingBottom: 69, paddingTop: 104 }}
         style={styles.guilds}
-        ItemSeparatorComponent={() => <ListDivider />}
+        ItemSeparatorComponent={() => <ListDivider isCenter />}
         showsVerticalScrollIndicator={false}
         data={guilds}
         keyExtractor={(item) => item.id}
