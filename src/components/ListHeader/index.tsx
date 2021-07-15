@@ -4,7 +4,7 @@ import { styles } from "./style";
 
 type Props = {
   title: string;
-  subtitle: string;
+  subtitle: string | number;
 };
 export const ListHeader = ({ title, subtitle }: Props) => {
   return (

@@ -1,18 +1,8 @@
-import React, { useState } from "react";
-import { BorderlessButton } from "react-native-gesture-handler";
-import { Fontisto } from "@expo/vector-icons";
-import { View, ImageBackground, Text, FlatList } from "react-native";
+import React from "react";
+
+import { View, Text } from "react-native";
 import { styles } from "./style";
 import { Avatar } from "../../components/Avatar";
-import { Profile } from "../../components/Profile";
-import { ButtonAdd } from "../../components/ButtonAdd";
-import { CategorySelect } from "../../components/CategorySelect";
-import { Appointment } from "../../components/Appointment";
-import { ListDivider } from "../../components/ListDivider";
-import { Background } from "../../components/Background";
-import { Header } from "../../components/Header";
-import { theme } from "../../global/styles/themes";
-import BannerImg from "../../assets/banner.png";
 
 export type MemberProps = {
   id: string;
